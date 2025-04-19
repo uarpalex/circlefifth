@@ -284,10 +284,7 @@ const ChordWheel = () => {
     
           {/* Shield Text Lines */}
           <g className="shieldTextLines">
-              <text className="shieldTextLines_circle" x="365" y="448" fontSize="36">Circle of Fifths</text>
-              <text className="shieldTextLines_click" x="345" y="484" fontSize="20">Click any chord to change key.</text>
-              <text className="shieldTextLines_tap requiresPointerEvents" x="340" y="510" fontSize="20">Tap & drag left ↔ right to rotate.</text>
-              <text className="shieldTextLines_key" x="460" y="322" fontSize="24">Key</text>
+              <text className="shieldTextLines_key" x="460" y="322" fontSize="24"></text>
           </g>
     
           {/* Shield Text */}
