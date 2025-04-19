@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="#A9B9D7" stroke="#224472" stroke-width="2"/>
+  <path d="M50 5a45 45 0 1 1 0 90 45 45 0 0 1 0-90zm0 15a30 30 0 1 0 0 60 30 30 0 0 0 0-60z" fill="#acbcd6" fill-opacity="0.7"/>
+  <circle cx="50" cy="50" r="20" fill="#d7d8fb" stroke="#fff" stroke-width="2"/>
+  <text x="50" y="55" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">CW</text>
+</svg>

@@ -1,0 +1,153 @@
+.circle {
+  margin: 0 auto;
+}
+
+.circle.fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+.svg_circle-of-fifths {
+  width: 100%;
+  max-width: calc(100vmin - 2.8rem);
+  overflow: visible;
+  position: relative;
+  left: 50%;
+  transform: translate(-33%, 33%);
+  scale: 2;
+}
+
+.imgLayer,
+.rotationLayer,
+.circlesLayer,
+.shieldLayer,
+.textLayer,
+.shieldTextLines {
+  pointer-events: none;
+}
+
+.bgLayer {
+  fill: var(--bgFill);
+}
+
+.imgLayer {
+  opacity: var(--imgOpacity);
+}
+
+.clickLayer_major {
+  stroke: currentcolor;
+  stroke-width: 1;
+}
+
+.rotationLayer {
+  will-change: transform;
+  transform-origin: 50% 50%;
+  transition: transform linear;
+}
+
+.rotationLayer_bg {
+  fill-rule: evenodd;
+  fill: var(--rotationBgFill);
+  fill-opacity: var(--rotationBgOpacity);
+  stroke: var(--rotationBgStroke);
+  stroke-width: 2;
+}
+
+.rotationLayer_minor {
+  opacity: .85;
+}
+
+.rotationLayer_major {
+  opacity: .85;
+  stroke: var(--rotationMajorStroke);
+  stroke-width: var(--rotationMajorStrokeWidth);
+}
+
+.circlesLayer {
+  fill: none;
+  stroke: var(--circlesMajorStroke);
+  stroke-width: var(--circlesMajorStrokeWidth);
+}
+
+.shieldLayer {
+  fill: var(--shieldFill);
+  stroke: var(--shieldStroke);
+  stroke-width: 2;
+}
+
+.sheildLayer_overlay {
+  fill: var(--shieldOverlayFill);
+  fill-opacity: var(--shieldOverlayFillOpacity);
+}
+
+.sheildLayer_sus4 {
+  fill: var(--shieldSus4Fill);
+  fill-opacity: var(--shieldSus4FillOpacity);
+}
+
+.shieldLayer_key {
+  fill: var(--shieldKeyFill);
+}
+
+.shieldTextLines {
+  fill: var(--shieldTextLinesFill);
+  color: var(--shieldTextLinesColor);
+}
+
+.shieldTextLines_circle,
+.shieldTextLines_click,
+.shieldTextLines_tap {
+  text-shadow: var(--shieldTextLinesShadow);
+}
+
+.shieldTextLines_key {
+   fill: #000;
+}
+
+.shieldText {
+  fill: var(--shieldTextFill);
+}
+
+[data-rotate]:hover {
+  cursor: pointer;
+  fill: #fff;
+}
+
+.dragLayer {
+  cursor: move;
+}
+
+/* Fullscreen button */
+.fullscreen-btn {
+  position: absolute;
+  padding: .5rem;
+  background-color: var(--btnBg);
+  border: 0rem solid var(--btnColor);
+  border-radius: .24rem;
+  box-shadow: 0 .125rem .25rem var(--btnShadow);
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: var(--btnColor);
+  font-size: inherit;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.fullscreen-btn:hover,
+.fullscreen-btn:focus {
+  color: var(--btnColorHover);
+  background-color: var(--btnColor);
+  border-color: var(--btnColorHover);
+  box-shadow: 0 .25rem .5rem var(--btnShadowHover);
+  outline: none;
+  transform: scale(1.2);
+}
+
+.fullscreen-svg {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: currentColor;
+  transition: fill .3s;
+}

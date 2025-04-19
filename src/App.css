@@ -1,0 +1,95 @@
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #000;
+  background-color: var(--pageBg);
+}
+
+:root {
+  --pageBg: #A9B9D7;
+  --imgOpacity: .8;
+  --bgFill: hsla(214,71%,80%,1);
+
+  --btnBg:          hsla(214,71%,100%,.5);
+  --btnShadow:      hsla(214,71%,10%,.5);
+  --btnShadowHover: hsla(214,71%,10%,1);
+  --btnColor:       rgb(0, 0, 0);
+  --btnColorHover:  hsla(214,71%,100%,1);
+
+  --rotationBgFill: #c4d0e2;
+  --rotationBgOpacity: 1;
+  --rotationBgStroke: #fff;
+  --rotationMajorStroke: #fff;
+  --rotationMajorStrokeWidth: 3;
+
+  --circlesMajorStroke: #fff;
+  --circlesMajorStrokeWidth: 3;
+
+  --shieldFill: #fff;
+  --shieldStroke: #eef;
+  --shieldOverlayFill: #acbcd6;
+  --shieldOverlayFillOpacity: 0.7;
+  --shieldSus4Fill: none;
+  --shieldSus4FillOpacity: 0.25;
+  --shieldKeyFill: #d7d8fb;
+
+  --shieldTextLinesColor: #000;
+  --shieldTextLinesFill: #000;
+  --shieldTextLinesShadow: 0 1px 1px #fff;
+
+  --shieldTextFill: #000;
+}
+
+/* If the OS has dark mode set then... */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pageBg: #224472;
+    --imgOpacity: 1;
+    --bgFill: hsla(214,71%,25%,.5);
+
+    --rotationBgFill: #fff;
+    --rotationBgOpacity: 0.25;
+    --rotationBgStroke: #000;
+    --rotationMajorStroke: #000;
+    --rotationMajorStrokeWidth: 1;
+
+    --circlesMajorStroke: currentcolor;
+    --circlesMajorStrokeWidth: 1;
+
+    --shieldFill: #fff;
+    --shieldStroke: currentcolor;
+    --shieldOverlayFill: #41437b;
+    --shieldOverlayFillOpacity: 0.65;
+    --shieldSus4Fill: #000;
+    --shieldSus4FillOpacity: 0.2;
+    --shieldKeyFill: #d7d8fb;
+
+    --shieldTextLinesColor: #fff;
+    --shieldTextLinesFill: #fff;
+    --shieldTextLinesShadow: 0 2px 1px #000;
+
+    --shieldTextFill: #000;
+  }
+}
+
+.-visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
